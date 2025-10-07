@@ -28,6 +28,7 @@ function App() {
   const toggleComplete=(id)=>{
     setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id===id?{...prevTodo,completed:!prevTodo.completed} : prevTodo ))
   }
+  
 
   useEffect(()=>{
     // localStorage.getItem will give in String format so convert it into We have to convert it into JSON format 
